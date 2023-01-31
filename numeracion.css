@@ -1,0 +1,24 @@
+body {
+    counter-reset: section;
+}
+h2::before {
+    counter-increment: section;
+    content: "Estrofa nº " counter(section) ": ";
+    color: blue;
+}
+h2 {
+    counter-reset: section2;
+}
+p::before {
+    counter-increment: section2;
+    content: counter(section2) ": ";
+    color:blue;
+}
+p {
+    color:blue;
+}
+span {
+    color: blue;
+    background-color: yellow;
+    font-weight: bold;
+}
